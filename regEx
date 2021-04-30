@@ -1,0 +1,16 @@
+let regEx
+
+// At least one letter (any case)
+regEx = /(?=.*[a-zA-Z])/
+
+// At least one letter and one number
+regEx = /(?=.*\d)(?=.*[a-zA-Z])/
+
+// At least one uppercase letter, one lowercase letter and one number
+regEx = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z])/
+
+// At least one uppercase letter, one lowercase letter, one number and one special character (symbol)
+regEx = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W)/
+
+// Email regular expression pattern
+regEx = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
